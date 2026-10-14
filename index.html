@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Trellis — the right experiment, before you run it</title>
+  <meta name="description" content="Trellis models your bioprocess, biology and math together, and tells you if your next experiment is right before you run it.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" href="assets/trellis-logo.svg">
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js" } }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#site" data-skip>Skip the story</a>
+
+  <header class="nav">
+    <a class="nav-logo" href="#top" aria-label="Trellis home"></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#how">How it works</a>
+      <a href="#proof">Proof</a>
+      <a href="#company">Company</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-skip" href="#site" data-skip>Skip the story</a>
+      <a class="btn nav-cta" href="#demo">Book a demo</a>
+    </div>
+  </header>
+
+  <div id="logo-fly" aria-hidden="true"></div>
+
+  <main id="top">
+    <section id="story" aria-label="The Trellis story">
+      <div class="stage">
+        <canvas id="gl" aria-hidden="true"></canvas>
+        <div class="vignette" aria-hidden="true"></div>
+        <div class="labels" aria-hidden="true"></div>
+        <svg class="golden-diagram" viewBox="-100 -100 200 200" aria-hidden="true">
+          <circle class="ring" r="98"/>
+          <line class="ray" x1="0" y1="0" x2="98" y2="0"/>
+          <line class="ray" x1="0" y1="0" x2="-72.3" y2="-66.2"/>
+          <path class="arc" pathLength="100" d="M 30 0 A 30 30 0 0 0 -22.1 -20.3"/>
+          <text x="14" y="-30">137.5°</text>
+        </svg>
+        <div class="hud" aria-hidden="true"></div>
+        <div class="copy"></div>
+        <div class="hero-end">
+          <h1>“I hope this works” is the most expensive sentence in your lab.</h1>
+          <a class="btn cta" href="#demo">Book a demo</a>
+        </div>
+        <div class="cue" aria-hidden="true"><span>Scroll</span><i></i></div>
+        <ol class="rail" aria-hidden="true"></ol>
+        <div class="progress" aria-hidden="true"><i></i></div>
+      </div>
+    </section>
+
+    <div id="site" tabindex="-1">
+      <section class="site-section" id="problem">
+        <p class="eyebrow">The problem</p>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        <p class="lede">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </section>
+
+      <section class="site-section" id="how">
+        <p class="eyebrow">How it works</p>
+        <h2>Three steps from guesswork to the right run.</h2>
+        <div class="steps">
+          <article><span class="step-n">01</span><h3>Lorem ipsum</h3><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></article>
+          <article><span class="step-n">02</span><h3>Dolor sit amet</h3><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></article>
+          <article><span class="step-n">03</span><h3>Consectetur</h3><p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra.</p></article>
+        </div>
+      </section>
+
+      <section class="site-section" id="proof">
+        <p class="eyebrow">Proof</p>
+        <div class="logos"><span></span><span></span><span></span><span></span><span></span></div>
+        <blockquote>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero.”<cite>Name Surname, Head of Process Development</cite></blockquote>
+      </section>
+
+      <section class="cta-band" id="demo">
+        <h2>Know your next experiment is the right one.</h2>
+        <a class="btn" href="#demo">Book a demo</a>
+      </section>
+
+      <footer class="footer" id="company">
+        <span>© 2026 Trellis</span>
+        <span>Lorem · Ipsum · Dolor</span>
+      </footer>
+    </div>
+  </main>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
